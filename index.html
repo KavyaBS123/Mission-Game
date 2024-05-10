@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>SpaceX Mission 2030</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+</head>
+<body>
+
+<h2 class="title">SpaceX Mission 2030</h2>
+
+<div class="game">
+    <div class="info">
+      <div class="level">Level <span id="level">1</span></div>
+	  
+      <div class="score">Score <span id="score"></span></div>
+    </div>
+    <div id="loading">Click to play..!</div>
+    <div class="canvas">
+      <canvas id="background" width="360" height="480">
+        Whoops, looks like your browser does not support some thing this game need. &lt;canvas&gt; to be specific.
+      </canvas>
+     <!-- The canvas for all enemy ships and bullets -->
+      <canvas id="main" width="360" height="480">
+      </canvas>
+      <!-- The canvas the ship uses (can only move up one forth the screen.) -->
+      <canvas id="ship" width="360" height="480">
+      </canvas>
+      <b><div class="game-over" id="game-over">Game Over
+		<p> </p>
+        <b><div class="restartBtn" onclick="game.restart()">Try again..!</div></b>
+        <p class="medium">( R to restart )</p>
+      </div></b>
+      <div id="level-up">
+        Level up..!
+      </div>
+    </div>
+    <div id="lives">
+      <img src="live.png" alt="" />
+      <img src="live.png" alt="" />
+      <img src="live.png" alt="" />
+    </div>
+</div>
+
+<div class="content">
+  <p>Control the spaceship with <code>arrow keys</code>, shoot with <code>space</code></p>  
+</div>
+<script src="game.js"></script>
+</body>
+</html>
