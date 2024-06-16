@@ -291,13 +291,13 @@ var imageRepository = new function() {
     imageLoaded();
   }
   // Set images src  
-  this.background.src = "bg.jpg";
-  this.spaceship.src = "ship.png";
-  this.spaceshipDown.src = "shipDown.png";
-  this.bullet.src = "bullet.png";
-  this.enemy.src = "enemy.png";
-  this.enemyDown.src = "enemyDown.png";
-  this.enemyBullet.src = "bulletEnemy.png";
+  this.background.src = "images/bg.jpg";
+  this.spaceship.src = "images/ship.png";
+  this.spaceshipDown.src = "images/shipDown.png";
+  this.bullet.src = "images/bullet.png";
+  this.enemy.src = "images/enemy.png";
+  this.enemyDown.src = "images/enemyDown.png";
+  this.enemyBullet.src = "images/bulletEnemy.png";
 }
 
 function Pool(maxSize) {
@@ -477,7 +477,7 @@ function Game() {
     this.enemyBulletPool.init("enemyBullet");
 
    for(var i = 1, lives = ""; i <= game.playerLives; i++) {
-      lives += '<img src="live.png" />';
+      lives += '<img src="images/live.png" />';
     }
     document.getElementById('lives').innerHTML = lives;
 
